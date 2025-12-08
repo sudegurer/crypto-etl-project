@@ -1,0 +1,319 @@
+[2025-12-08T21:52:06.926+0000] {processor.py:161} INFO - Started process (PID=3341) to work on /opt/airflow/dags/fetch_crypto_data.py
+[2025-12-08T21:52:06.926+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/fetch_crypto_data.py for tasks to queue
+[2025-12-08T21:52:06.928+0000] {logging_mixin.py:188} INFO - [2025-12-08T21:52:06.928+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/fetch_crypto_data.py
+[2025-12-08T21:52:07.034+0000] {processor.py:840} INFO - DAG(s) 'fetch_crypto_data' retrieved from /opt/airflow/dags/fetch_crypto_data.py
+[2025-12-08T21:52:07.069+0000] {logging_mixin.py:188} INFO - [2025-12-08T21:52:07.068+0000] {override.py:1769} INFO - Created Permission View: can edit on DAG:fetch_crypto_data
+[2025-12-08T21:52:07.072+0000] {logging_mixin.py:188} INFO - [2025-12-08T21:52:07.072+0000] {override.py:1769} INFO - Created Permission View: can delete on DAG:fetch_crypto_data
+[2025-12-08T21:52:07.074+0000] {logging_mixin.py:188} INFO - [2025-12-08T21:52:07.074+0000] {override.py:1769} INFO - Created Permission View: can read on DAG:fetch_crypto_data
+[2025-12-08T21:52:07.074+0000] {logging_mixin.py:188} INFO - [2025-12-08T21:52:07.074+0000] {dag.py:3033} INFO - Sync 1 DAGs
+[2025-12-08T21:52:07.079+0000] {logging_mixin.py:188} INFO - [2025-12-08T21:52:07.078+0000] {dag.py:3055} INFO - Creating ORM DAG for fetch_crypto_data
+[2025-12-08T21:52:07.082+0000] {logging_mixin.py:188} INFO - [2025-12-08T21:52:07.082+0000] {dag.py:3820} INFO - Setting next_dagrun for fetch_crypto_data to 2025-12-07T00:00:00+00:00, run_after=2025-12-08T00:00:00+00:00
+[2025-12-08T21:52:07.087+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/fetch_crypto_data.py took 0.164 seconds
+[2025-12-08T21:52:37.454+0000] {processor.py:161} INFO - Started process (PID=3398) to work on /opt/airflow/dags/fetch_crypto_data.py
+[2025-12-08T21:52:37.455+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/fetch_crypto_data.py for tasks to queue
+[2025-12-08T21:52:37.457+0000] {logging_mixin.py:188} INFO - [2025-12-08T21:52:37.456+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/fetch_crypto_data.py
+[2025-12-08T21:52:37.553+0000] {processor.py:840} INFO - DAG(s) 'fetch_crypto_data' retrieved from /opt/airflow/dags/fetch_crypto_data.py
+[2025-12-08T21:52:37.559+0000] {logging_mixin.py:188} INFO - [2025-12-08T21:52:37.559+0000] {dag.py:3033} INFO - Sync 1 DAGs
+[2025-12-08T21:52:37.566+0000] {logging_mixin.py:188} INFO - [2025-12-08T21:52:37.566+0000] {dag.py:3820} INFO - Setting next_dagrun for fetch_crypto_data to 2025-12-07T00:00:00+00:00, run_after=2025-12-08T00:00:00+00:00
+[2025-12-08T21:52:37.571+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/fetch_crypto_data.py took 0.119 seconds
+[2025-12-08T21:53:07.955+0000] {processor.py:161} INFO - Started process (PID=3455) to work on /opt/airflow/dags/fetch_crypto_data.py
+[2025-12-08T21:53:07.956+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/fetch_crypto_data.py for tasks to queue
+[2025-12-08T21:53:07.958+0000] {logging_mixin.py:188} INFO - [2025-12-08T21:53:07.958+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/fetch_crypto_data.py
+[2025-12-08T21:53:08.072+0000] {processor.py:840} INFO - DAG(s) 'fetch_crypto_data' retrieved from /opt/airflow/dags/fetch_crypto_data.py
+[2025-12-08T21:53:08.081+0000] {logging_mixin.py:188} INFO - [2025-12-08T21:53:08.080+0000] {dag.py:3033} INFO - Sync 1 DAGs
+[2025-12-08T21:53:08.089+0000] {logging_mixin.py:188} INFO - [2025-12-08T21:53:08.089+0000] {dag.py:3820} INFO - Setting next_dagrun for fetch_crypto_data to 2025-12-08T00:00:00+00:00, run_after=2025-12-09T00:00:00+00:00
+[2025-12-08T21:53:08.095+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/fetch_crypto_data.py took 0.144 seconds
+[2025-12-08T21:53:38.492+0000] {processor.py:161} INFO - Started process (PID=3512) to work on /opt/airflow/dags/fetch_crypto_data.py
+[2025-12-08T21:53:38.493+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/fetch_crypto_data.py for tasks to queue
+[2025-12-08T21:53:38.495+0000] {logging_mixin.py:188} INFO - [2025-12-08T21:53:38.495+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/fetch_crypto_data.py
+[2025-12-08T21:53:38.600+0000] {processor.py:840} INFO - DAG(s) 'fetch_crypto_data' retrieved from /opt/airflow/dags/fetch_crypto_data.py
+[2025-12-08T21:53:38.609+0000] {logging_mixin.py:188} INFO - [2025-12-08T21:53:38.609+0000] {dag.py:3033} INFO - Sync 1 DAGs
+[2025-12-08T21:53:38.616+0000] {logging_mixin.py:188} INFO - [2025-12-08T21:53:38.616+0000] {dag.py:3820} INFO - Setting next_dagrun for fetch_crypto_data to 2025-12-08T00:00:00+00:00, run_after=2025-12-09T00:00:00+00:00
+[2025-12-08T21:53:38.622+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/fetch_crypto_data.py took 0.134 seconds
+[2025-12-08T21:54:08.981+0000] {processor.py:161} INFO - Started process (PID=3569) to work on /opt/airflow/dags/fetch_crypto_data.py
+[2025-12-08T21:54:08.981+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/fetch_crypto_data.py for tasks to queue
+[2025-12-08T21:54:08.983+0000] {logging_mixin.py:188} INFO - [2025-12-08T21:54:08.983+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/fetch_crypto_data.py
+[2025-12-08T21:54:09.088+0000] {processor.py:840} INFO - DAG(s) 'fetch_crypto_data' retrieved from /opt/airflow/dags/fetch_crypto_data.py
+[2025-12-08T21:54:09.095+0000] {logging_mixin.py:188} INFO - [2025-12-08T21:54:09.095+0000] {dag.py:3033} INFO - Sync 1 DAGs
+[2025-12-08T21:54:09.103+0000] {logging_mixin.py:188} INFO - [2025-12-08T21:54:09.103+0000] {dag.py:3820} INFO - Setting next_dagrun for fetch_crypto_data to 2025-12-08T00:00:00+00:00, run_after=2025-12-09T00:00:00+00:00
+[2025-12-08T21:54:09.109+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/fetch_crypto_data.py took 0.131 seconds
+[2025-12-08T21:54:39.566+0000] {processor.py:161} INFO - Started process (PID=3626) to work on /opt/airflow/dags/fetch_crypto_data.py
+[2025-12-08T21:54:39.567+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/fetch_crypto_data.py for tasks to queue
+[2025-12-08T21:54:39.569+0000] {logging_mixin.py:188} INFO - [2025-12-08T21:54:39.569+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/fetch_crypto_data.py
+[2025-12-08T21:54:39.678+0000] {processor.py:840} INFO - DAG(s) 'fetch_crypto_data' retrieved from /opt/airflow/dags/fetch_crypto_data.py
+[2025-12-08T21:54:39.686+0000] {logging_mixin.py:188} INFO - [2025-12-08T21:54:39.686+0000] {dag.py:3033} INFO - Sync 1 DAGs
+[2025-12-08T21:54:39.694+0000] {logging_mixin.py:188} INFO - [2025-12-08T21:54:39.694+0000] {dag.py:3820} INFO - Setting next_dagrun for fetch_crypto_data to 2025-12-08T00:00:00+00:00, run_after=2025-12-09T00:00:00+00:00
+[2025-12-08T21:54:39.700+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/fetch_crypto_data.py took 0.137 seconds
+[2025-12-08T21:55:09.924+0000] {processor.py:161} INFO - Started process (PID=3683) to work on /opt/airflow/dags/fetch_crypto_data.py
+[2025-12-08T21:55:09.925+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/fetch_crypto_data.py for tasks to queue
+[2025-12-08T21:55:09.927+0000] {logging_mixin.py:188} INFO - [2025-12-08T21:55:09.927+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/fetch_crypto_data.py
+[2025-12-08T21:55:10.029+0000] {processor.py:840} INFO - DAG(s) 'fetch_crypto_data' retrieved from /opt/airflow/dags/fetch_crypto_data.py
+[2025-12-08T21:55:10.036+0000] {logging_mixin.py:188} INFO - [2025-12-08T21:55:10.036+0000] {dag.py:3033} INFO - Sync 1 DAGs
+[2025-12-08T21:55:10.043+0000] {logging_mixin.py:188} INFO - [2025-12-08T21:55:10.042+0000] {dag.py:3820} INFO - Setting next_dagrun for fetch_crypto_data to 2025-12-08T00:00:00+00:00, run_after=2025-12-09T00:00:00+00:00
+[2025-12-08T21:55:10.048+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/fetch_crypto_data.py took 0.128 seconds
+[2025-12-08T21:55:40.401+0000] {processor.py:161} INFO - Started process (PID=3740) to work on /opt/airflow/dags/fetch_crypto_data.py
+[2025-12-08T21:55:40.402+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/fetch_crypto_data.py for tasks to queue
+[2025-12-08T21:55:40.404+0000] {logging_mixin.py:188} INFO - [2025-12-08T21:55:40.404+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/fetch_crypto_data.py
+[2025-12-08T21:55:40.503+0000] {processor.py:840} INFO - DAG(s) 'fetch_crypto_data' retrieved from /opt/airflow/dags/fetch_crypto_data.py
+[2025-12-08T21:55:40.510+0000] {logging_mixin.py:188} INFO - [2025-12-08T21:55:40.510+0000] {dag.py:3033} INFO - Sync 1 DAGs
+[2025-12-08T21:55:40.517+0000] {logging_mixin.py:188} INFO - [2025-12-08T21:55:40.517+0000] {dag.py:3820} INFO - Setting next_dagrun for fetch_crypto_data to 2025-12-08T00:00:00+00:00, run_after=2025-12-09T00:00:00+00:00
+[2025-12-08T21:55:40.522+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/fetch_crypto_data.py took 0.125 seconds
+[2025-12-08T21:56:10.839+0000] {processor.py:161} INFO - Started process (PID=3797) to work on /opt/airflow/dags/fetch_crypto_data.py
+[2025-12-08T21:56:10.840+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/fetch_crypto_data.py for tasks to queue
+[2025-12-08T21:56:10.843+0000] {logging_mixin.py:188} INFO - [2025-12-08T21:56:10.842+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/fetch_crypto_data.py
+[2025-12-08T21:56:10.953+0000] {processor.py:840} INFO - DAG(s) 'fetch_crypto_data' retrieved from /opt/airflow/dags/fetch_crypto_data.py
+[2025-12-08T21:56:10.961+0000] {logging_mixin.py:188} INFO - [2025-12-08T21:56:10.961+0000] {dag.py:3033} INFO - Sync 1 DAGs
+[2025-12-08T21:56:10.969+0000] {logging_mixin.py:188} INFO - [2025-12-08T21:56:10.968+0000] {dag.py:3820} INFO - Setting next_dagrun for fetch_crypto_data to 2025-12-08T00:00:00+00:00, run_after=2025-12-09T00:00:00+00:00
+[2025-12-08T21:56:10.975+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/fetch_crypto_data.py took 0.140 seconds
+[2025-12-08T21:56:41.374+0000] {processor.py:161} INFO - Started process (PID=3854) to work on /opt/airflow/dags/fetch_crypto_data.py
+[2025-12-08T21:56:41.375+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/fetch_crypto_data.py for tasks to queue
+[2025-12-08T21:56:41.378+0000] {logging_mixin.py:188} INFO - [2025-12-08T21:56:41.377+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/fetch_crypto_data.py
+[2025-12-08T21:56:41.483+0000] {processor.py:840} INFO - DAG(s) 'fetch_crypto_data' retrieved from /opt/airflow/dags/fetch_crypto_data.py
+[2025-12-08T21:56:41.491+0000] {logging_mixin.py:188} INFO - [2025-12-08T21:56:41.491+0000] {dag.py:3033} INFO - Sync 1 DAGs
+[2025-12-08T21:56:41.499+0000] {logging_mixin.py:188} INFO - [2025-12-08T21:56:41.499+0000] {dag.py:3820} INFO - Setting next_dagrun for fetch_crypto_data to 2025-12-08T00:00:00+00:00, run_after=2025-12-09T00:00:00+00:00
+[2025-12-08T21:56:41.506+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/fetch_crypto_data.py took 0.136 seconds
+[2025-12-08T21:57:11.934+0000] {processor.py:161} INFO - Started process (PID=3917) to work on /opt/airflow/dags/fetch_crypto_data.py
+[2025-12-08T21:57:11.935+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/fetch_crypto_data.py for tasks to queue
+[2025-12-08T21:57:11.939+0000] {logging_mixin.py:188} INFO - [2025-12-08T21:57:11.939+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/fetch_crypto_data.py
+[2025-12-08T21:57:12.038+0000] {processor.py:840} INFO - DAG(s) 'fetch_crypto_data' retrieved from /opt/airflow/dags/fetch_crypto_data.py
+[2025-12-08T21:57:12.045+0000] {logging_mixin.py:188} INFO - [2025-12-08T21:57:12.045+0000] {dag.py:3033} INFO - Sync 1 DAGs
+[2025-12-08T21:57:12.053+0000] {logging_mixin.py:188} INFO - [2025-12-08T21:57:12.053+0000] {dag.py:3820} INFO - Setting next_dagrun for fetch_crypto_data to 2025-12-08T00:00:00+00:00, run_after=2025-12-09T00:00:00+00:00
+[2025-12-08T21:57:12.058+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/fetch_crypto_data.py took 0.128 seconds
+[2025-12-08T21:57:35.876+0000] {processor.py:161} INFO - Started process (PID=42) to work on /opt/airflow/dags/fetch_crypto_data.py
+[2025-12-08T21:57:35.877+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/fetch_crypto_data.py for tasks to queue
+[2025-12-08T21:57:35.880+0000] {logging_mixin.py:188} INFO - [2025-12-08T21:57:35.880+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/fetch_crypto_data.py
+[2025-12-08T21:57:36.622+0000] {processor.py:840} INFO - DAG(s) 'fetch_crypto_data' retrieved from /opt/airflow/dags/fetch_crypto_data.py
+[2025-12-08T21:57:36.761+0000] {logging_mixin.py:188} INFO - [2025-12-08T21:57:36.761+0000] {dag.py:3033} INFO - Sync 1 DAGs
+[2025-12-08T21:57:36.786+0000] {logging_mixin.py:188} INFO - [2025-12-08T21:57:36.786+0000] {dag.py:3820} INFO - Setting next_dagrun for fetch_crypto_data to 2025-12-08T00:00:00+00:00, run_after=2025-12-09T00:00:00+00:00
+[2025-12-08T21:57:36.805+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/fetch_crypto_data.py took 0.931 seconds
+[2025-12-08T21:58:06.867+0000] {processor.py:161} INFO - Started process (PID=111) to work on /opt/airflow/dags/fetch_crypto_data.py
+[2025-12-08T21:58:06.870+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/fetch_crypto_data.py for tasks to queue
+[2025-12-08T21:58:06.871+0000] {logging_mixin.py:188} INFO - [2025-12-08T21:58:06.871+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/fetch_crypto_data.py
+[2025-12-08T21:58:07.060+0000] {processor.py:840} INFO - DAG(s) 'fetch_crypto_data' retrieved from /opt/airflow/dags/fetch_crypto_data.py
+[2025-12-08T21:58:07.068+0000] {logging_mixin.py:188} INFO - [2025-12-08T21:58:07.067+0000] {dag.py:3033} INFO - Sync 1 DAGs
+[2025-12-08T21:58:07.076+0000] {logging_mixin.py:188} INFO - [2025-12-08T21:58:07.076+0000] {dag.py:3820} INFO - Setting next_dagrun for fetch_crypto_data to 2025-12-08T00:00:00+00:00, run_after=2025-12-09T00:00:00+00:00
+[2025-12-08T21:58:07.087+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/fetch_crypto_data.py took 0.221 seconds
+[2025-12-08T21:58:37.605+0000] {processor.py:161} INFO - Started process (PID=161) to work on /opt/airflow/dags/fetch_crypto_data.py
+[2025-12-08T21:58:37.605+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/fetch_crypto_data.py for tasks to queue
+[2025-12-08T21:58:37.606+0000] {logging_mixin.py:188} INFO - [2025-12-08T21:58:37.606+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/fetch_crypto_data.py
+[2025-12-08T21:58:37.786+0000] {processor.py:840} INFO - DAG(s) 'fetch_crypto_data' retrieved from /opt/airflow/dags/fetch_crypto_data.py
+[2025-12-08T21:58:37.792+0000] {logging_mixin.py:188} INFO - [2025-12-08T21:58:37.792+0000] {dag.py:3033} INFO - Sync 1 DAGs
+[2025-12-08T21:58:37.802+0000] {logging_mixin.py:188} INFO - [2025-12-08T21:58:37.802+0000] {dag.py:3820} INFO - Setting next_dagrun for fetch_crypto_data to 2025-12-08T00:00:00+00:00, run_after=2025-12-09T00:00:00+00:00
+[2025-12-08T21:58:37.808+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/fetch_crypto_data.py took 0.205 seconds
+[2025-12-08T21:59:08.052+0000] {processor.py:161} INFO - Started process (PID=218) to work on /opt/airflow/dags/fetch_crypto_data.py
+[2025-12-08T21:59:08.052+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/fetch_crypto_data.py for tasks to queue
+[2025-12-08T21:59:08.054+0000] {logging_mixin.py:188} INFO - [2025-12-08T21:59:08.054+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/fetch_crypto_data.py
+[2025-12-08T21:59:08.267+0000] {processor.py:840} INFO - DAG(s) 'fetch_crypto_data' retrieved from /opt/airflow/dags/fetch_crypto_data.py
+[2025-12-08T21:59:08.277+0000] {logging_mixin.py:188} INFO - [2025-12-08T21:59:08.277+0000] {dag.py:3033} INFO - Sync 1 DAGs
+[2025-12-08T21:59:08.286+0000] {logging_mixin.py:188} INFO - [2025-12-08T21:59:08.286+0000] {dag.py:3820} INFO - Setting next_dagrun for fetch_crypto_data to 2025-12-08T00:00:00+00:00, run_after=2025-12-09T00:00:00+00:00
+[2025-12-08T21:59:08.296+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/fetch_crypto_data.py took 0.247 seconds
+[2025-12-08T21:59:38.594+0000] {processor.py:161} INFO - Started process (PID=275) to work on /opt/airflow/dags/fetch_crypto_data.py
+[2025-12-08T21:59:38.596+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/fetch_crypto_data.py for tasks to queue
+[2025-12-08T21:59:38.598+0000] {logging_mixin.py:188} INFO - [2025-12-08T21:59:38.598+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/fetch_crypto_data.py
+[2025-12-08T21:59:38.811+0000] {processor.py:840} INFO - DAG(s) 'fetch_crypto_data' retrieved from /opt/airflow/dags/fetch_crypto_data.py
+[2025-12-08T21:59:38.820+0000] {logging_mixin.py:188} INFO - [2025-12-08T21:59:38.819+0000] {dag.py:3033} INFO - Sync 1 DAGs
+[2025-12-08T21:59:38.828+0000] {logging_mixin.py:188} INFO - [2025-12-08T21:59:38.828+0000] {dag.py:3820} INFO - Setting next_dagrun for fetch_crypto_data to 2025-12-08T00:00:00+00:00, run_after=2025-12-09T00:00:00+00:00
+[2025-12-08T21:59:38.836+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/fetch_crypto_data.py took 0.248 seconds
+[2025-12-08T22:00:09.193+0000] {processor.py:161} INFO - Started process (PID=332) to work on /opt/airflow/dags/fetch_crypto_data.py
+[2025-12-08T22:00:09.195+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/fetch_crypto_data.py for tasks to queue
+[2025-12-08T22:00:09.197+0000] {logging_mixin.py:188} INFO - [2025-12-08T22:00:09.197+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/fetch_crypto_data.py
+[2025-12-08T22:00:09.382+0000] {processor.py:840} INFO - DAG(s) 'fetch_crypto_data' retrieved from /opt/airflow/dags/fetch_crypto_data.py
+[2025-12-08T22:00:09.391+0000] {logging_mixin.py:188} INFO - [2025-12-08T22:00:09.390+0000] {dag.py:3033} INFO - Sync 1 DAGs
+[2025-12-08T22:00:09.398+0000] {logging_mixin.py:188} INFO - [2025-12-08T22:00:09.398+0000] {dag.py:3820} INFO - Setting next_dagrun for fetch_crypto_data to 2025-12-08T00:00:00+00:00, run_after=2025-12-09T00:00:00+00:00
+[2025-12-08T22:00:09.405+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/fetch_crypto_data.py took 0.216 seconds
+[2025-12-08T22:00:39.734+0000] {processor.py:161} INFO - Started process (PID=389) to work on /opt/airflow/dags/fetch_crypto_data.py
+[2025-12-08T22:00:39.735+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/fetch_crypto_data.py for tasks to queue
+[2025-12-08T22:00:39.737+0000] {logging_mixin.py:188} INFO - [2025-12-08T22:00:39.737+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/fetch_crypto_data.py
+[2025-12-08T22:00:39.938+0000] {processor.py:840} INFO - DAG(s) 'fetch_crypto_data' retrieved from /opt/airflow/dags/fetch_crypto_data.py
+[2025-12-08T22:00:39.947+0000] {logging_mixin.py:188} INFO - [2025-12-08T22:00:39.946+0000] {dag.py:3033} INFO - Sync 1 DAGs
+[2025-12-08T22:00:39.955+0000] {logging_mixin.py:188} INFO - [2025-12-08T22:00:39.955+0000] {dag.py:3820} INFO - Setting next_dagrun for fetch_crypto_data to 2025-12-08T00:00:00+00:00, run_after=2025-12-09T00:00:00+00:00
+[2025-12-08T22:00:39.961+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/fetch_crypto_data.py took 0.232 seconds
+[2025-12-08T22:01:10.307+0000] {processor.py:161} INFO - Started process (PID=452) to work on /opt/airflow/dags/fetch_crypto_data.py
+[2025-12-08T22:01:10.308+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/fetch_crypto_data.py for tasks to queue
+[2025-12-08T22:01:10.311+0000] {logging_mixin.py:188} INFO - [2025-12-08T22:01:10.311+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/fetch_crypto_data.py
+[2025-12-08T22:01:10.518+0000] {processor.py:840} INFO - DAG(s) 'fetch_crypto_data' retrieved from /opt/airflow/dags/fetch_crypto_data.py
+[2025-12-08T22:01:10.524+0000] {logging_mixin.py:188} INFO - [2025-12-08T22:01:10.524+0000] {dag.py:3033} INFO - Sync 1 DAGs
+[2025-12-08T22:01:10.534+0000] {logging_mixin.py:188} INFO - [2025-12-08T22:01:10.533+0000] {dag.py:3820} INFO - Setting next_dagrun for fetch_crypto_data to 2025-12-08T00:00:00+00:00, run_after=2025-12-09T00:00:00+00:00
+[2025-12-08T22:01:10.543+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/fetch_crypto_data.py took 0.240 seconds
+[2025-12-08T22:01:40.781+0000] {processor.py:161} INFO - Started process (PID=509) to work on /opt/airflow/dags/fetch_crypto_data.py
+[2025-12-08T22:01:40.782+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/fetch_crypto_data.py for tasks to queue
+[2025-12-08T22:01:40.785+0000] {logging_mixin.py:188} INFO - [2025-12-08T22:01:40.784+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/fetch_crypto_data.py
+[2025-12-08T22:01:40.989+0000] {processor.py:840} INFO - DAG(s) 'fetch_crypto_data' retrieved from /opt/airflow/dags/fetch_crypto_data.py
+[2025-12-08T22:01:40.995+0000] {logging_mixin.py:188} INFO - [2025-12-08T22:01:40.995+0000] {dag.py:3033} INFO - Sync 1 DAGs
+[2025-12-08T22:01:41.003+0000] {logging_mixin.py:188} INFO - [2025-12-08T22:01:41.003+0000] {dag.py:3820} INFO - Setting next_dagrun for fetch_crypto_data to 2025-12-08T00:00:00+00:00, run_after=2025-12-09T00:00:00+00:00
+[2025-12-08T22:01:41.011+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/fetch_crypto_data.py took 0.235 seconds
+[2025-12-08T22:02:11.291+0000] {processor.py:161} INFO - Started process (PID=566) to work on /opt/airflow/dags/fetch_crypto_data.py
+[2025-12-08T22:02:11.294+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/fetch_crypto_data.py for tasks to queue
+[2025-12-08T22:02:11.297+0000] {logging_mixin.py:188} INFO - [2025-12-08T22:02:11.296+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/fetch_crypto_data.py
+[2025-12-08T22:02:11.483+0000] {processor.py:840} INFO - DAG(s) 'fetch_crypto_data' retrieved from /opt/airflow/dags/fetch_crypto_data.py
+[2025-12-08T22:02:11.490+0000] {logging_mixin.py:188} INFO - [2025-12-08T22:02:11.490+0000] {dag.py:3033} INFO - Sync 1 DAGs
+[2025-12-08T22:02:11.500+0000] {logging_mixin.py:188} INFO - [2025-12-08T22:02:11.500+0000] {dag.py:3820} INFO - Setting next_dagrun for fetch_crypto_data to 2025-12-08T00:00:00+00:00, run_after=2025-12-09T00:00:00+00:00
+[2025-12-08T22:02:11.505+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/fetch_crypto_data.py took 0.219 seconds
+[2025-12-08T22:02:41.790+0000] {processor.py:161} INFO - Started process (PID=623) to work on /opt/airflow/dags/fetch_crypto_data.py
+[2025-12-08T22:02:41.791+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/fetch_crypto_data.py for tasks to queue
+[2025-12-08T22:02:41.795+0000] {logging_mixin.py:188} INFO - [2025-12-08T22:02:41.794+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/fetch_crypto_data.py
+[2025-12-08T22:02:41.998+0000] {processor.py:840} INFO - DAG(s) 'fetch_crypto_data' retrieved from /opt/airflow/dags/fetch_crypto_data.py
+[2025-12-08T22:02:42.005+0000] {logging_mixin.py:188} INFO - [2025-12-08T22:02:42.004+0000] {dag.py:3033} INFO - Sync 1 DAGs
+[2025-12-08T22:02:42.015+0000] {logging_mixin.py:188} INFO - [2025-12-08T22:02:42.014+0000] {dag.py:3820} INFO - Setting next_dagrun for fetch_crypto_data to 2025-12-08T00:00:00+00:00, run_after=2025-12-09T00:00:00+00:00
+[2025-12-08T22:02:42.021+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/fetch_crypto_data.py took 0.236 seconds
+[2025-12-08T22:03:12.255+0000] {processor.py:161} INFO - Started process (PID=680) to work on /opt/airflow/dags/fetch_crypto_data.py
+[2025-12-08T22:03:12.256+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/fetch_crypto_data.py for tasks to queue
+[2025-12-08T22:03:12.258+0000] {logging_mixin.py:188} INFO - [2025-12-08T22:03:12.258+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/fetch_crypto_data.py
+[2025-12-08T22:03:12.432+0000] {processor.py:840} INFO - DAG(s) 'fetch_crypto_data' retrieved from /opt/airflow/dags/fetch_crypto_data.py
+[2025-12-08T22:03:12.440+0000] {logging_mixin.py:188} INFO - [2025-12-08T22:03:12.440+0000] {dag.py:3033} INFO - Sync 1 DAGs
+[2025-12-08T22:03:12.449+0000] {logging_mixin.py:188} INFO - [2025-12-08T22:03:12.449+0000] {dag.py:3820} INFO - Setting next_dagrun for fetch_crypto_data to 2025-12-08T00:00:00+00:00, run_after=2025-12-09T00:00:00+00:00
+[2025-12-08T22:03:12.454+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/fetch_crypto_data.py took 0.204 seconds
+[2025-12-08T22:03:42.748+0000] {processor.py:161} INFO - Started process (PID=737) to work on /opt/airflow/dags/fetch_crypto_data.py
+[2025-12-08T22:03:42.749+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/fetch_crypto_data.py for tasks to queue
+[2025-12-08T22:03:42.751+0000] {logging_mixin.py:188} INFO - [2025-12-08T22:03:42.751+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/fetch_crypto_data.py
+[2025-12-08T22:03:42.941+0000] {processor.py:840} INFO - DAG(s) 'fetch_crypto_data' retrieved from /opt/airflow/dags/fetch_crypto_data.py
+[2025-12-08T22:03:42.947+0000] {logging_mixin.py:188} INFO - [2025-12-08T22:03:42.947+0000] {dag.py:3033} INFO - Sync 1 DAGs
+[2025-12-08T22:03:42.955+0000] {logging_mixin.py:188} INFO - [2025-12-08T22:03:42.955+0000] {dag.py:3820} INFO - Setting next_dagrun for fetch_crypto_data to 2025-12-08T00:00:00+00:00, run_after=2025-12-09T00:00:00+00:00
+[2025-12-08T22:03:42.965+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/fetch_crypto_data.py took 0.222 seconds
+[2025-12-08T22:04:13.236+0000] {processor.py:161} INFO - Started process (PID=794) to work on /opt/airflow/dags/fetch_crypto_data.py
+[2025-12-08T22:04:13.237+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/fetch_crypto_data.py for tasks to queue
+[2025-12-08T22:04:13.239+0000] {logging_mixin.py:188} INFO - [2025-12-08T22:04:13.239+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/fetch_crypto_data.py
+[2025-12-08T22:04:13.453+0000] {processor.py:840} INFO - DAG(s) 'fetch_crypto_data' retrieved from /opt/airflow/dags/fetch_crypto_data.py
+[2025-12-08T22:04:13.460+0000] {logging_mixin.py:188} INFO - [2025-12-08T22:04:13.460+0000] {dag.py:3033} INFO - Sync 1 DAGs
+[2025-12-08T22:04:13.468+0000] {logging_mixin.py:188} INFO - [2025-12-08T22:04:13.468+0000] {dag.py:3820} INFO - Setting next_dagrun for fetch_crypto_data to 2025-12-08T00:00:00+00:00, run_after=2025-12-09T00:00:00+00:00
+[2025-12-08T22:04:13.478+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/fetch_crypto_data.py took 0.246 seconds
+[2025-12-08T22:04:43.816+0000] {processor.py:161} INFO - Started process (PID=851) to work on /opt/airflow/dags/fetch_crypto_data.py
+[2025-12-08T22:04:43.818+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/fetch_crypto_data.py for tasks to queue
+[2025-12-08T22:04:43.821+0000] {logging_mixin.py:188} INFO - [2025-12-08T22:04:43.820+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/fetch_crypto_data.py
+[2025-12-08T22:04:44.062+0000] {processor.py:840} INFO - DAG(s) 'fetch_crypto_data' retrieved from /opt/airflow/dags/fetch_crypto_data.py
+[2025-12-08T22:04:44.070+0000] {logging_mixin.py:188} INFO - [2025-12-08T22:04:44.070+0000] {dag.py:3033} INFO - Sync 1 DAGs
+[2025-12-08T22:04:44.079+0000] {logging_mixin.py:188} INFO - [2025-12-08T22:04:44.079+0000] {dag.py:3820} INFO - Setting next_dagrun for fetch_crypto_data to 2025-12-08T00:00:00+00:00, run_after=2025-12-09T00:00:00+00:00
+[2025-12-08T22:04:44.087+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/fetch_crypto_data.py took 0.276 seconds
+[2025-12-08T22:05:14.458+0000] {processor.py:161} INFO - Started process (PID=908) to work on /opt/airflow/dags/fetch_crypto_data.py
+[2025-12-08T22:05:14.459+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/fetch_crypto_data.py for tasks to queue
+[2025-12-08T22:05:14.462+0000] {logging_mixin.py:188} INFO - [2025-12-08T22:05:14.462+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/fetch_crypto_data.py
+[2025-12-08T22:05:14.665+0000] {processor.py:840} INFO - DAG(s) 'fetch_crypto_data' retrieved from /opt/airflow/dags/fetch_crypto_data.py
+[2025-12-08T22:05:14.671+0000] {logging_mixin.py:188} INFO - [2025-12-08T22:05:14.671+0000] {dag.py:3033} INFO - Sync 1 DAGs
+[2025-12-08T22:05:14.679+0000] {logging_mixin.py:188} INFO - [2025-12-08T22:05:14.679+0000] {dag.py:3820} INFO - Setting next_dagrun for fetch_crypto_data to 2025-12-08T00:00:00+00:00, run_after=2025-12-09T00:00:00+00:00
+[2025-12-08T22:05:14.686+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/fetch_crypto_data.py took 0.232 seconds
+[2025-12-08T22:05:44.923+0000] {processor.py:161} INFO - Started process (PID=965) to work on /opt/airflow/dags/fetch_crypto_data.py
+[2025-12-08T22:05:44.925+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/fetch_crypto_data.py for tasks to queue
+[2025-12-08T22:05:44.928+0000] {logging_mixin.py:188} INFO - [2025-12-08T22:05:44.927+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/fetch_crypto_data.py
+[2025-12-08T22:05:45.122+0000] {processor.py:840} INFO - DAG(s) 'fetch_crypto_data' retrieved from /opt/airflow/dags/fetch_crypto_data.py
+[2025-12-08T22:05:45.128+0000] {logging_mixin.py:188} INFO - [2025-12-08T22:05:45.128+0000] {dag.py:3033} INFO - Sync 1 DAGs
+[2025-12-08T22:05:45.137+0000] {logging_mixin.py:188} INFO - [2025-12-08T22:05:45.137+0000] {dag.py:3820} INFO - Setting next_dagrun for fetch_crypto_data to 2025-12-08T00:00:00+00:00, run_after=2025-12-09T00:00:00+00:00
+[2025-12-08T22:05:45.143+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/fetch_crypto_data.py took 0.225 seconds
+[2025-12-08T22:06:15.505+0000] {processor.py:161} INFO - Started process (PID=1022) to work on /opt/airflow/dags/fetch_crypto_data.py
+[2025-12-08T22:06:15.507+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/fetch_crypto_data.py for tasks to queue
+[2025-12-08T22:06:15.509+0000] {logging_mixin.py:188} INFO - [2025-12-08T22:06:15.509+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/fetch_crypto_data.py
+[2025-12-08T22:06:15.692+0000] {processor.py:840} INFO - DAG(s) 'fetch_crypto_data' retrieved from /opt/airflow/dags/fetch_crypto_data.py
+[2025-12-08T22:06:15.700+0000] {logging_mixin.py:188} INFO - [2025-12-08T22:06:15.699+0000] {dag.py:3033} INFO - Sync 1 DAGs
+[2025-12-08T22:06:15.708+0000] {logging_mixin.py:188} INFO - [2025-12-08T22:06:15.708+0000] {dag.py:3820} INFO - Setting next_dagrun for fetch_crypto_data to 2025-12-08T00:00:00+00:00, run_after=2025-12-09T00:00:00+00:00
+[2025-12-08T22:06:15.719+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/fetch_crypto_data.py took 0.218 seconds
+[2025-12-08T22:06:46.037+0000] {processor.py:161} INFO - Started process (PID=1079) to work on /opt/airflow/dags/fetch_crypto_data.py
+[2025-12-08T22:06:46.038+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/fetch_crypto_data.py for tasks to queue
+[2025-12-08T22:06:46.040+0000] {logging_mixin.py:188} INFO - [2025-12-08T22:06:46.040+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/fetch_crypto_data.py
+[2025-12-08T22:06:46.229+0000] {processor.py:840} INFO - DAG(s) 'fetch_crypto_data' retrieved from /opt/airflow/dags/fetch_crypto_data.py
+[2025-12-08T22:06:46.236+0000] {logging_mixin.py:188} INFO - [2025-12-08T22:06:46.236+0000] {dag.py:3033} INFO - Sync 1 DAGs
+[2025-12-08T22:06:46.245+0000] {logging_mixin.py:188} INFO - [2025-12-08T22:06:46.245+0000] {dag.py:3820} INFO - Setting next_dagrun for fetch_crypto_data to 2025-12-08T00:00:00+00:00, run_after=2025-12-09T00:00:00+00:00
+[2025-12-08T22:06:46.251+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/fetch_crypto_data.py took 0.219 seconds
+[2025-12-08T22:07:16.573+0000] {processor.py:161} INFO - Started process (PID=1136) to work on /opt/airflow/dags/fetch_crypto_data.py
+[2025-12-08T22:07:16.574+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/fetch_crypto_data.py for tasks to queue
+[2025-12-08T22:07:16.578+0000] {logging_mixin.py:188} INFO - [2025-12-08T22:07:16.576+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/fetch_crypto_data.py
+[2025-12-08T22:07:16.754+0000] {processor.py:840} INFO - DAG(s) 'fetch_crypto_data' retrieved from /opt/airflow/dags/fetch_crypto_data.py
+[2025-12-08T22:07:16.761+0000] {logging_mixin.py:188} INFO - [2025-12-08T22:07:16.761+0000] {dag.py:3033} INFO - Sync 1 DAGs
+[2025-12-08T22:07:16.769+0000] {logging_mixin.py:188} INFO - [2025-12-08T22:07:16.769+0000] {dag.py:3820} INFO - Setting next_dagrun for fetch_crypto_data to 2025-12-08T00:00:00+00:00, run_after=2025-12-09T00:00:00+00:00
+[2025-12-08T22:07:16.776+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/fetch_crypto_data.py took 0.207 seconds
+[2025-12-08T22:07:47.107+0000] {processor.py:161} INFO - Started process (PID=1193) to work on /opt/airflow/dags/fetch_crypto_data.py
+[2025-12-08T22:07:47.109+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/fetch_crypto_data.py for tasks to queue
+[2025-12-08T22:07:47.111+0000] {logging_mixin.py:188} INFO - [2025-12-08T22:07:47.111+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/fetch_crypto_data.py
+[2025-12-08T22:07:47.318+0000] {processor.py:840} INFO - DAG(s) 'fetch_crypto_data' retrieved from /opt/airflow/dags/fetch_crypto_data.py
+[2025-12-08T22:07:47.323+0000] {logging_mixin.py:188} INFO - [2025-12-08T22:07:47.323+0000] {dag.py:3033} INFO - Sync 1 DAGs
+[2025-12-08T22:07:47.332+0000] {logging_mixin.py:188} INFO - [2025-12-08T22:07:47.332+0000] {dag.py:3820} INFO - Setting next_dagrun for fetch_crypto_data to 2025-12-08T00:00:00+00:00, run_after=2025-12-09T00:00:00+00:00
+[2025-12-08T22:07:47.341+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/fetch_crypto_data.py took 0.237 seconds
+[2025-12-08T22:08:17.697+0000] {processor.py:161} INFO - Started process (PID=1250) to work on /opt/airflow/dags/fetch_crypto_data.py
+[2025-12-08T22:08:17.698+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/fetch_crypto_data.py for tasks to queue
+[2025-12-08T22:08:17.699+0000] {logging_mixin.py:188} INFO - [2025-12-08T22:08:17.699+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/fetch_crypto_data.py
+[2025-12-08T22:08:17.878+0000] {processor.py:840} INFO - DAG(s) 'fetch_crypto_data' retrieved from /opt/airflow/dags/fetch_crypto_data.py
+[2025-12-08T22:08:17.886+0000] {logging_mixin.py:188} INFO - [2025-12-08T22:08:17.886+0000] {dag.py:3033} INFO - Sync 1 DAGs
+[2025-12-08T22:08:17.894+0000] {logging_mixin.py:188} INFO - [2025-12-08T22:08:17.894+0000] {dag.py:3820} INFO - Setting next_dagrun for fetch_crypto_data to 2025-12-08T00:00:00+00:00, run_after=2025-12-09T00:00:00+00:00
+[2025-12-08T22:08:17.900+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/fetch_crypto_data.py took 0.204 seconds
+[2025-12-08T22:08:48.291+0000] {processor.py:161} INFO - Started process (PID=1307) to work on /opt/airflow/dags/fetch_crypto_data.py
+[2025-12-08T22:08:48.292+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/fetch_crypto_data.py for tasks to queue
+[2025-12-08T22:08:48.295+0000] {logging_mixin.py:188} INFO - [2025-12-08T22:08:48.295+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/fetch_crypto_data.py
+[2025-12-08T22:08:48.472+0000] {processor.py:840} INFO - DAG(s) 'fetch_crypto_data' retrieved from /opt/airflow/dags/fetch_crypto_data.py
+[2025-12-08T22:08:48.480+0000] {logging_mixin.py:188} INFO - [2025-12-08T22:08:48.480+0000] {dag.py:3033} INFO - Sync 1 DAGs
+[2025-12-08T22:08:48.488+0000] {logging_mixin.py:188} INFO - [2025-12-08T22:08:48.488+0000] {dag.py:3820} INFO - Setting next_dagrun for fetch_crypto_data to 2025-12-08T00:00:00+00:00, run_after=2025-12-09T00:00:00+00:00
+[2025-12-08T22:08:48.494+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/fetch_crypto_data.py took 0.208 seconds
+[2025-12-08T22:09:18.876+0000] {processor.py:161} INFO - Started process (PID=1364) to work on /opt/airflow/dags/fetch_crypto_data.py
+[2025-12-08T22:09:18.878+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/fetch_crypto_data.py for tasks to queue
+[2025-12-08T22:09:18.881+0000] {logging_mixin.py:188} INFO - [2025-12-08T22:09:18.881+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/fetch_crypto_data.py
+[2025-12-08T22:09:19.060+0000] {processor.py:840} INFO - DAG(s) 'fetch_crypto_data' retrieved from /opt/airflow/dags/fetch_crypto_data.py
+[2025-12-08T22:09:19.069+0000] {logging_mixin.py:188} INFO - [2025-12-08T22:09:19.068+0000] {dag.py:3033} INFO - Sync 1 DAGs
+[2025-12-08T22:09:19.077+0000] {logging_mixin.py:188} INFO - [2025-12-08T22:09:19.077+0000] {dag.py:3820} INFO - Setting next_dagrun for fetch_crypto_data to 2025-12-08T00:00:00+00:00, run_after=2025-12-09T00:00:00+00:00
+[2025-12-08T22:09:19.082+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/fetch_crypto_data.py took 0.210 seconds
+[2025-12-08T22:09:49.321+0000] {processor.py:161} INFO - Started process (PID=1421) to work on /opt/airflow/dags/fetch_crypto_data.py
+[2025-12-08T22:09:49.323+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/fetch_crypto_data.py for tasks to queue
+[2025-12-08T22:09:49.325+0000] {logging_mixin.py:188} INFO - [2025-12-08T22:09:49.325+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/fetch_crypto_data.py
+[2025-12-08T22:09:49.522+0000] {processor.py:840} INFO - DAG(s) 'fetch_crypto_data' retrieved from /opt/airflow/dags/fetch_crypto_data.py
+[2025-12-08T22:09:49.529+0000] {logging_mixin.py:188} INFO - [2025-12-08T22:09:49.529+0000] {dag.py:3033} INFO - Sync 1 DAGs
+[2025-12-08T22:09:49.537+0000] {logging_mixin.py:188} INFO - [2025-12-08T22:09:49.537+0000] {dag.py:3820} INFO - Setting next_dagrun for fetch_crypto_data to 2025-12-08T00:00:00+00:00, run_after=2025-12-09T00:00:00+00:00
+[2025-12-08T22:09:49.544+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/fetch_crypto_data.py took 0.227 seconds
+[2025-12-08T22:10:19.877+0000] {processor.py:161} INFO - Started process (PID=1478) to work on /opt/airflow/dags/fetch_crypto_data.py
+[2025-12-08T22:10:19.878+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/fetch_crypto_data.py for tasks to queue
+[2025-12-08T22:10:19.880+0000] {logging_mixin.py:188} INFO - [2025-12-08T22:10:19.879+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/fetch_crypto_data.py
+[2025-12-08T22:10:20.077+0000] {processor.py:840} INFO - DAG(s) 'fetch_crypto_data' retrieved from /opt/airflow/dags/fetch_crypto_data.py
+[2025-12-08T22:10:20.088+0000] {logging_mixin.py:188} INFO - [2025-12-08T22:10:20.088+0000] {dag.py:3033} INFO - Sync 1 DAGs
+[2025-12-08T22:10:20.100+0000] {logging_mixin.py:188} INFO - [2025-12-08T22:10:20.100+0000] {dag.py:3820} INFO - Setting next_dagrun for fetch_crypto_data to 2025-12-08T00:00:00+00:00, run_after=2025-12-09T00:00:00+00:00
+[2025-12-08T22:10:20.106+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/fetch_crypto_data.py took 0.231 seconds
+[2025-12-08T22:10:50.467+0000] {processor.py:161} INFO - Started process (PID=1535) to work on /opt/airflow/dags/fetch_crypto_data.py
+[2025-12-08T22:10:50.468+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/fetch_crypto_data.py for tasks to queue
+[2025-12-08T22:10:50.470+0000] {logging_mixin.py:188} INFO - [2025-12-08T22:10:50.470+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/fetch_crypto_data.py
+[2025-12-08T22:10:50.645+0000] {processor.py:840} INFO - DAG(s) 'fetch_crypto_data' retrieved from /opt/airflow/dags/fetch_crypto_data.py
+[2025-12-08T22:10:50.654+0000] {logging_mixin.py:188} INFO - [2025-12-08T22:10:50.653+0000] {dag.py:3033} INFO - Sync 1 DAGs
+[2025-12-08T22:10:50.661+0000] {logging_mixin.py:188} INFO - [2025-12-08T22:10:50.661+0000] {dag.py:3820} INFO - Setting next_dagrun for fetch_crypto_data to 2025-12-08T00:00:00+00:00, run_after=2025-12-09T00:00:00+00:00
+[2025-12-08T22:10:50.666+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/fetch_crypto_data.py took 0.204 seconds
+[2025-12-08T22:11:21.024+0000] {processor.py:161} INFO - Started process (PID=1592) to work on /opt/airflow/dags/fetch_crypto_data.py
+[2025-12-08T22:11:21.025+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/fetch_crypto_data.py for tasks to queue
+[2025-12-08T22:11:21.028+0000] {logging_mixin.py:188} INFO - [2025-12-08T22:11:21.027+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/fetch_crypto_data.py
+[2025-12-08T22:11:21.196+0000] {processor.py:840} INFO - DAG(s) 'fetch_crypto_data' retrieved from /opt/airflow/dags/fetch_crypto_data.py
+[2025-12-08T22:11:21.204+0000] {logging_mixin.py:188} INFO - [2025-12-08T22:11:21.204+0000] {dag.py:3033} INFO - Sync 1 DAGs
+[2025-12-08T22:11:21.212+0000] {logging_mixin.py:188} INFO - [2025-12-08T22:11:21.212+0000] {dag.py:3820} INFO - Setting next_dagrun for fetch_crypto_data to 2025-12-08T00:00:00+00:00, run_after=2025-12-09T00:00:00+00:00
+[2025-12-08T22:11:21.218+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/fetch_crypto_data.py took 0.197 seconds
+[2025-12-08T22:11:51.262+0000] {processor.py:161} INFO - Started process (PID=1654) to work on /opt/airflow/dags/fetch_crypto_data.py
+[2025-12-08T22:11:51.262+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/fetch_crypto_data.py for tasks to queue
+[2025-12-08T22:11:51.264+0000] {logging_mixin.py:188} INFO - [2025-12-08T22:11:51.264+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/fetch_crypto_data.py
+[2025-12-08T22:11:51.431+0000] {processor.py:840} INFO - DAG(s) 'fetch_crypto_data' retrieved from /opt/airflow/dags/fetch_crypto_data.py
+[2025-12-08T22:11:51.437+0000] {logging_mixin.py:188} INFO - [2025-12-08T22:11:51.437+0000] {dag.py:3033} INFO - Sync 1 DAGs
+[2025-12-08T22:11:51.443+0000] {logging_mixin.py:188} INFO - [2025-12-08T22:11:51.443+0000] {dag.py:3820} INFO - Setting next_dagrun for fetch_crypto_data to 2025-12-08T00:00:00+00:00, run_after=2025-12-09T00:00:00+00:00
+[2025-12-08T22:11:51.448+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/fetch_crypto_data.py took 0.188 seconds
+[2025-12-08T22:12:22.409+0000] {processor.py:161} INFO - Started process (PID=1712) to work on /opt/airflow/dags/fetch_crypto_data.py
+[2025-12-08T22:12:22.411+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/fetch_crypto_data.py for tasks to queue
+[2025-12-08T22:12:22.413+0000] {logging_mixin.py:188} INFO - [2025-12-08T22:12:22.412+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/fetch_crypto_data.py
+[2025-12-08T22:12:22.610+0000] {processor.py:840} INFO - DAG(s) 'fetch_crypto_data' retrieved from /opt/airflow/dags/fetch_crypto_data.py
+[2025-12-08T22:12:22.618+0000] {logging_mixin.py:188} INFO - [2025-12-08T22:12:22.618+0000] {dag.py:3033} INFO - Sync 1 DAGs
+[2025-12-08T22:12:22.628+0000] {logging_mixin.py:188} INFO - [2025-12-08T22:12:22.628+0000] {dag.py:3820} INFO - Setting next_dagrun for fetch_crypto_data to 2025-12-08T00:00:00+00:00, run_after=2025-12-09T00:00:00+00:00
+[2025-12-08T22:12:22.634+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/fetch_crypto_data.py took 0.229 seconds
+[2025-12-08T22:12:53.247+0000] {processor.py:161} INFO - Started process (PID=1769) to work on /opt/airflow/dags/fetch_crypto_data.py
+[2025-12-08T22:12:53.248+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/fetch_crypto_data.py for tasks to queue
+[2025-12-08T22:12:53.251+0000] {logging_mixin.py:188} INFO - [2025-12-08T22:12:53.251+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/fetch_crypto_data.py
+[2025-12-08T22:12:53.437+0000] {processor.py:840} INFO - DAG(s) 'fetch_crypto_data' retrieved from /opt/airflow/dags/fetch_crypto_data.py
+[2025-12-08T22:12:53.443+0000] {logging_mixin.py:188} INFO - [2025-12-08T22:12:53.443+0000] {dag.py:3033} INFO - Sync 1 DAGs
+[2025-12-08T22:12:53.452+0000] {logging_mixin.py:188} INFO - [2025-12-08T22:12:53.452+0000] {dag.py:3820} INFO - Setting next_dagrun for fetch_crypto_data to 2025-12-08T00:00:00+00:00, run_after=2025-12-09T00:00:00+00:00
+[2025-12-08T22:12:53.458+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/fetch_crypto_data.py took 0.215 seconds
+[2025-12-08T22:13:24.143+0000] {processor.py:161} INFO - Started process (PID=1826) to work on /opt/airflow/dags/fetch_crypto_data.py
+[2025-12-08T22:13:24.145+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/fetch_crypto_data.py for tasks to queue
+[2025-12-08T22:13:24.148+0000] {logging_mixin.py:188} INFO - [2025-12-08T22:13:24.148+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/fetch_crypto_data.py
+[2025-12-08T22:13:24.345+0000] {processor.py:840} INFO - DAG(s) 'fetch_crypto_data' retrieved from /opt/airflow/dags/fetch_crypto_data.py
+[2025-12-08T22:13:24.352+0000] {logging_mixin.py:188} INFO - [2025-12-08T22:13:24.352+0000] {dag.py:3033} INFO - Sync 1 DAGs
+[2025-12-08T22:13:24.360+0000] {logging_mixin.py:188} INFO - [2025-12-08T22:13:24.360+0000] {dag.py:3820} INFO - Setting next_dagrun for fetch_crypto_data to 2025-12-08T00:00:00+00:00, run_after=2025-12-09T00:00:00+00:00
+[2025-12-08T22:13:24.367+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/fetch_crypto_data.py took 0.229 seconds
+[2025-12-08T22:13:55.134+0000] {processor.py:161} INFO - Started process (PID=1883) to work on /opt/airflow/dags/fetch_crypto_data.py
+[2025-12-08T22:13:55.135+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/fetch_crypto_data.py for tasks to queue
+[2025-12-08T22:13:55.137+0000] {logging_mixin.py:188} INFO - [2025-12-08T22:13:55.137+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/fetch_crypto_data.py
+[2025-12-08T22:13:55.324+0000] {processor.py:840} INFO - DAG(s) 'fetch_crypto_data' retrieved from /opt/airflow/dags/fetch_crypto_data.py
+[2025-12-08T22:13:55.334+0000] {logging_mixin.py:188} INFO - [2025-12-08T22:13:55.333+0000] {dag.py:3033} INFO - Sync 1 DAGs
+[2025-12-08T22:13:55.343+0000] {logging_mixin.py:188} INFO - [2025-12-08T22:13:55.343+0000] {dag.py:3820} INFO - Setting next_dagrun for fetch_crypto_data to 2025-12-08T00:00:00+00:00, run_after=2025-12-09T00:00:00+00:00
+[2025-12-08T22:13:55.352+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/fetch_crypto_data.py took 0.222 seconds
+[2025-12-08T22:14:26.240+0000] {processor.py:161} INFO - Started process (PID=1940) to work on /opt/airflow/dags/fetch_crypto_data.py
+[2025-12-08T22:14:26.242+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/fetch_crypto_data.py for tasks to queue
+[2025-12-08T22:14:26.244+0000] {logging_mixin.py:188} INFO - [2025-12-08T22:14:26.244+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/fetch_crypto_data.py
+[2025-12-08T22:14:26.420+0000] {processor.py:840} INFO - DAG(s) 'fetch_crypto_data' retrieved from /opt/airflow/dags/fetch_crypto_data.py
+[2025-12-08T22:14:26.429+0000] {logging_mixin.py:188} INFO - [2025-12-08T22:14:26.428+0000] {dag.py:3033} INFO - Sync 1 DAGs
+[2025-12-08T22:14:26.437+0000] {logging_mixin.py:188} INFO - [2025-12-08T22:14:26.437+0000] {dag.py:3820} INFO - Setting next_dagrun for fetch_crypto_data to 2025-12-08T00:00:00+00:00, run_after=2025-12-09T00:00:00+00:00
+[2025-12-08T22:14:26.445+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/fetch_crypto_data.py took 0.210 seconds
