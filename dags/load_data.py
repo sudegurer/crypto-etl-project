@@ -1,20 +1,24 @@
 import psycopg2
 import pandas as pd
-import os
+import logging
+
+# Logging yapılandırması
+logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 
 def load_to_postgres():
-    # PostgreSQL bağlantı parametreleri (docker-compose'dan alındı)
+    """Temizlenmiş veriyi okur ve PostgreSQL veritabanına yükler."""
+    
     DB_HOST = "postgres"
     DB_NAME = "airflow"
     DB_USER = "airflow"
     DB_PASS = "airflow"
-
-    # Temizlenmiş veri dosyasının mutlak yolu
     clean_file_path = '/opt/airflow/data/crypto_clean.csv'
 
-    # 1. Veritabanına Bağlanma
+    logging.info("--- [Load] Veritabanı Yükleme Aşaması Başladı ---")
     conn = None
+    
     try:
+        # 1. Veritabanına Bağlanma
         conn = psycopg2.connect(
             host=DB_HOST,
             database=DB_NAME,
@@ -22,12 +26,13 @@ def load_to_postgres():
             password=DB_PASS
         )
         cur = conn.cursor()
-        print("PostgreSQL veritabanına başarıyla bağlanıldı.")
+        logging.info("PostgreSQL veritabanına başarıyla bağlanıldı.")
 
         # 2. Veri Çerçevesini Okuma
         df = pd.read_csv(clean_file_path)
+        logging.info(f"Veritabanına yüklenecek satır sayısı: {len(df)}")
 
-        # 3. Tabloyu Oluşturma (Önce varsa silinir)
+        # 3. Tabloyu Oluşturma (Varsa silinir)
         create_table_query = """
         DROP TABLE IF EXISTS crypto_data;
         CREATE TABLE crypto_data (
@@ -37,11 +42,11 @@ def load_to_postgres():
             price NUMERIC,
             market_cap BIGINT,
             volume BIGINT,
-            last_updated_at TIMESTAMP
+            last_updated_at TIMESTAMP WITH TIME ZONE
         );
         """
         cur.execute(create_table_query)
-        print("Tablo oluşturma başarılı.")
+        logging.info("Veritabanında 'crypto_data' tablosu yeniden oluşturuldu.")
 
         # 4. Verileri Yükleme
         for index, row in df.iterrows():
@@ -53,15 +58,27 @@ def load_to_postgres():
             cur.execute(insert_query, tuple(row))
         
         conn.commit()
-        print(f"PostgreSQL'e {len(df)} satır veri başarıyla yüklendi.")
+        logging.info(f"PostgreSQL'e {len(df)} satır veri başarıyla yüklendi.")
 
-    except (Exception, psycopg2.Error) as error:
-        print(f"Veritabanı işlemi hatası: {error}")
+    except psycopg2.Error as error:
+        logging.error(f"PostgreSQL bağlantı/işlem hatası: {error}")
+        if conn: conn.rollback()
+        raise
+    except FileNotFoundError:
+        logging.error(f"Temizlenmiş veri dosyası bulunamadı: {clean_file_path}")
+        raise
+    except Exception as e:
+        logging.error(f"Genel hata oluştu: {e}")
+        raise
+        
     finally:
         if conn is not None:
             cur.close()
             conn.close()
-            print("PostgreSQL bağlantısı kapatıldı.")
+            logging.info("PostgreSQL bağlantısı kapatıldı.")
+            
+    logging.info("--- [Load] Veritabanı Yükleme Aşaması Tamamlandı ---")
+
 
 if __name__ == "__main__":
     load_to_postgres()
