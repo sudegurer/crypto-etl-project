@@ -32,10 +32,8 @@ def load_to_postgres():
         df = pd.read_csv(clean_file_path)
         logging.info(f"Veritabanına yüklenecek satır sayısı: {len(df)}")
         
-        # =========================================================
         # A) DIMENSION TABLOSU (dim_coin)
         # Sadece coin'e ait sabit bilgileri (id, symbol, name) içerir
-        # =========================================================
         
         # 3. Dim Tablosunu Oluşturma
         create_dim_table_query = """
@@ -63,10 +61,8 @@ def load_to_postgres():
         logging.info(f"Dim tablosuna {len(df_dim)} eşsiz coin bilgisi yüklendi.")
 
 
-        # =========================================================
         # B) FACT TABLOSU (fact_crypto_metrics)
         # Metrikleri (price, volume, market_cap) ve zamanı içerir
-        # =========================================================
         
         # 5. Fact Tablosunu Oluşturma
         create_fact_table_query = """
