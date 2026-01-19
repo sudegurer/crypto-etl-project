@@ -27,6 +27,8 @@ Goal: Convert raw external data into structured, query-ready tables for analytic
 ---
 
 ##  Repository Structure
+
+```
 crypto-etl-project/
 ├── dags/                   # ETL scripts (Airflow-compatible)
 ├── data/                   # data storage (raw → clean)
@@ -36,6 +38,7 @@ crypto-etl-project/
 ├── transform_data.py       # Transform
 ├── load_data.py            # Load
 ├── README.md
+```
 ---
 
 ##  How It Works
@@ -64,19 +67,19 @@ Insert cleaned data into PostgreSQL (`crypto_data` table).
 > **Prerequisites:** Docker + Docker Compose installed
 
 ### 1) Clone the repository
-```bash
+```
 git clone https://github.com/sudegurer/crypto-etl-project
 cd crypto-etl-project
 ```
 ### 2) Start services
-```bash
+```
 docker compose up -d
 ```
     
 ### 3) Run ETL steps (locally or using containers)
 
 # Extract data
-```bash
+```
 docker run --rm \
     --network crypto-etl-project_default \
     -v $(pwd)/dags:/opt/airflow/dags \
@@ -85,7 +88,7 @@ docker run --rm \
     python /opt/airflow/dags/fetch_crypto_data.py
 ```
 # Transform data
-```bash
+```
 docker run --rm \
     --network crypto-etl-project_default \
     -v $(pwd)/dags:/opt/airflow/dags \
@@ -94,7 +97,7 @@ docker run --rm \
     python /opt/airflow/dags/transform_data.py
 ```
 # Load data
-```bash
+```
 docker run --rm \
     --network crypto-etl-project_default \
     -v $(pwd)/dags:/opt/airflow/dags \
@@ -104,15 +107,15 @@ docker run --rm \
 ```
 ### Check the Database
 # Find Postgres container ID
-```bash
+```
 docker ps
 ```
 # Connect to Postgres container
-```bash
+```
 docker exec -it <POSTGRES_CONTAINER_ID> psql -U airflow -d airflow
 ```
 In the Postgres prompt:
-```bash
+```
 SELECT * FROM crypto_data LIMIT 5;
 \q
 ```
