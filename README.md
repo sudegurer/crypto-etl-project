@@ -1,78 +1,152 @@
-# Kripto Verileri ETL Pipeline (Extract-Transform-Load)
-Bu proje, Python, Docker ve PostgreSQL kullanarak CoinGecko API'den popüler kripto para verilerini günlük olarak çekmek, temizlemek ve analiz için yapılandırılmış bir veritabanına yüklemek üzere tasarlanmış uçtan uca bir veri mühendisliği pipeline'ıdır.
+# Crypto Market Data ETL Pipeline
 
-##  Proje Amacı ve Problem Tanımı
+An end-to-end ETL pipeline to extract daily cryptocurrency market data from CoinGecko, clean & transform it, and load it into a PostgreSQL database for analytics-ready storage.  
+Developed as a self-driven data engineering exercise to practice API ingestion, data transformation, and containerized deployments.
 
-**Amaç:** Finansal analiz, tahmin modelleri veya iş zekası (BI) raporları için güvenilir, güncel ve temiz bir kripto veri kaynağı oluşturmak.
+---
 
-**Çözülen Problemler:**
-1.  **Dağınık Veri Kaynağı:** CoinGecko API'den gelen ham JSON verisinin tutarsız yapısını standart bir tablo formatına dönüştürmek.
-2.  **Veri Sürdürülebilirliği:** Veri akışını manuel çalıştırmak yerine, otomatik ve tekrarlanabilir bir altyapı oluşturmak.
+##  Project Overview
 
-##  Mimari ve Teknolojiler
+The pipeline follows the ETL (Extract → Transform → Load) pattern:
 
-Proje, üç ana aşamadan oluşur (ETL) ve bu adımlar modüler Python scriptleri ile yönetilir. 
+1. **Extract** – Fetch raw cryptocurrency data from the CoinGecko API  
+2. **Transform** – Clean and standardize data for consistency  
+3. **Load** – Insert transformed data into a PostgreSQL table
 
-[Image of Simple ETL Pipeline Diagram]
+Goal: Convert raw external data into structured, query-ready tables for analytics and visualization.
+
+---
+
+##  Tech Stack
+
+- **Python** – core ETL scripts  
+- **Docker & Docker Compose** – containerized environment  
+- **PostgreSQL** – relational database for analytics-ready storage  
+- **Pandas & Requests** – data processing and API handling
+
+---
+
+##  Repository Structure
+crypto-etl-project/
+├── dags/                   # ETL scripts (Airflow-compatible)
+├── data/                   # data storage (raw → clean)
+├── logs/                   # logs
+├── docker-compose.yml      # Docker setup
+├── fetch_crypto_data.py    # Extract
+├── transform_data.py       # Transform
+├── load_data.py            # Load
+├── README.md
+---
+
+##  How It Works
+
+### 1. Extract (API Ingestion)
+Fetch daily snapshots of top cryptocurrencies using CoinGecko API.  
+Saved as `data/crypto_raw.csv`.
+
+### 2. Transform (Cleaning & Standardization)
+- Convert JSON → tabular format  
+- Remove unnecessary columns  
+- Clean data types (numerical, timestamps)  
+- Standardize for DB ingestion  
+
+Output: `data/crypto_clean.csv`.
 
 
-### Kullanılan Teknolojiler
+### 3. Load (Database Insertion)
+Insert cleaned data into PostgreSQL (`crypto_data` table).
 
-| Kategori | Teknoloji | Amaç |
-| :--- | :--- | :--- |
-| **Programlama** | Python | ETL mantığı, veri işleme (Pandas) ve API çağrıları (Requests) |
-| **Veri Kaynağı** | CoinGecko API | Güncel kripto para piyasası verisi |
-| **Veritabanı** | PostgreSQL | Temizlenmiş (Gold Layer) verinin kalıcı olarak depolanması |
-| **Altyapı** | Docker & Docker Compose | Servislerin izole ve tekrarlanabilir bir ortamda çalıştırılması |
-| **Bağlantı** | Psycopg2 | Python'dan PostgreSQL'e güvenli bağlantı |
 
-##  Pipeline Akışı (ETL)
+---
 
-Pipeline, aşağıdaki adımları sırayla tamamlar:
+##  Quick Start / Installation
 
-1.  **Extract (`fetch_crypto_data.py`):** CoinGecko API'ye bağlanır, ilk 100 kripto paranın anlık verilerini çeker ve `data/crypto_raw.csv` dosyasına kaydeder.
-2.  **Transform (`transform_data.py`):** Ham CSV dosyasını okur, gereksiz kolonları çıkarır, veri tiplerini temizler ve sonuçları `data/crypto_clean.csv` dosyasına yazar.
-3.  **Load (`load_data.py`):** Temizlenmiş CSV dosyasını okur, **Docker Compose** ortamında çalışan PostgreSQL veritabanına bağlanır ve `crypto_data` tablosuna yükler.
+> **Prerequisites:** Docker + Docker Compose installed
 
-##  Kurulum ve Çalıştırma
+### 1) Clone the repository
+```bash
+git clone https://github.com/sudegurer/crypto-etl-project
+cd crypto-etl-project
+```
+### 2) Start services
+```bash
+docker compose up -d
+```
+    
+### 3) Run ETL steps (locally or using containers)
 
-### Ön Gereksinimler
+# Extract data
+```bash
+docker run --rm \
+    --network crypto-etl-project_default \
+    -v $(pwd)/dags:/opt/airflow/dags \
+    -v $(pwd)/data:/opt/airflow/data \
+    apache/airflow:2.8.0-python3.8 \
+    python /opt/airflow/dags/fetch_crypto_data.py
+```
+# Transform data
+```bash
+docker run --rm \
+    --network crypto-etl-project_default \
+    -v $(pwd)/dags:/opt/airflow/dags \
+    -v $(pwd)/data:/opt/airflow/data \
+    apache/airflow:2.8.0-python3.8 \
+    python /opt/airflow/dags/transform_data.py
+```
+# Load data
+```bash
+docker run --rm \
+    --network crypto-etl-project_default \
+    -v $(pwd)/dags:/opt/airflow/dags \
+    -v $(pwd)/data:/opt/airflow/data \
+    apache/airflow:2.8.0-python3.8 \
+    python /opt/airflow/load_data.py
+```
+### Check the Database
+# Find Postgres container ID
+```bash
+docker ps
+```
+# Connect to Postgres container
+```bash
+docker exec -it <POSTGRES_CONTAINER_ID> psql -U airflow -d airflow
+```
+In the Postgres prompt:
+```bash
+SELECT * FROM crypto_data LIMIT 5;
+\q
+```
+⸻
 
-* Docker ve Docker Compose
-* Python 3.8+
+ Database Overview
 
-### Adım Adım Kurulum
+The database contains a single analytics-oriented table named crypto_data with columns like:
+	•	coin_id
+	•	symbol
+	•	name
+	•	current_price
+	•	market_cap
+	•	total_volume
+	•	last_updated
 
-1.  **Depoyu Klonlama:**
-    ```bash
-    git clone [https://github.com/sudegurer/crypto-etl-project.git](https://github.com/sudegurer/crypto-etl-project.git)
-    cd crypto-etl-project
-    ```
-2.  **Servisleri Başlatma (Altyapı):**
-    ```bash
-    docker compose up -d
-    ```
-3.  **ETL Akışını Çalıştırma:**
-    *(Altyapı sorunları nedeniyle manuel çalıştırma yolu kullanılmıştır.)*
-    ```bash
-    docker run --rm \
-        --network [PROJECT_NAME]_default \
-        -v $(pwd)/dags:/opt/airflow/dags \
-        -v $(pwd)/data:/opt/airflow/data \
-        apache/airflow:2.8.0-python3.8 \
-        python /opt/airflow/dags/fetch_crypto_data.py && \
-    # (Diğer adımlar benzer şekilde çalıştırılır...)
-    ```
-4.  **Veritabanını Kontrol Etme:**
-    ```bash
-    docker exec -it [POSTGRES_CONTAINER_ID] psql -U airflow -d airflow
-    SELECT * FROM crypto_data LIMIT 5;
-    \q
-    ```
+This structure has been chosen to support simple analytical queries.
 
-##  Geliştirilen Beceriler ve Öğrenilenler
+⸻
 
-* **Veri Mühendisliği Pratiği:** Uçtan uca bir ETL hattını tasarlama ve uygulama.
-* **Docker ve Orkestrasyon:** Servisler arası ağ iletişimi (Network Bridging), Volume (Birleştirme) ve konteyner yönetiminde derinleşme.
-* **Hata Ayıklama (Debugging):** Docker ortamında karşılaşılan **"could not translate host name 'postgres'"** ve **GitHub kimlik doğrulama (403)** hatalarını giderme.
-* **Modüler Kodlama:** Her ETL aşamasını ayrı, test edilebilir Python modülleri olarak yapılandırma.
+ What I Learned
+	•	Designing a custom ETL pipeline
+	•	Using Docker for reproducible environments
+	•	API ingestion with proper transformation
+	•	Analytics-ready data modeling
+
+⸻
+
+ Notes & Limitations
+	•	Prototype for local development — scheduling, monitoring, or production automation isn’t implemented
+	•	Rate limits / API quotas should be considered when scaling
+	•	Production-ready setup would require orchestration (Airflow), monitoring, and logging
+
+⸻
+
+ Useful Links
+	•	Converter repo: https://github.com/sudegurer/crypto-etl-project
